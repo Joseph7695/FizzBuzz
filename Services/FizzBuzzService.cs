@@ -11,17 +11,21 @@ namespace FizzBuzz.Services
     {
         public string FizzBuzz(int value)
         {
-                // Can use StringBuilder when expecting a lot more concatenation due to the way C# handles string concat
-                string result = "";
-                if (value % 3 == 0)
-                {
-                    result += "Fizz";
-                }
-                if (value % 5 == 0)
-                {
-                    result += "Buzz";
-                }
-                return result;
-        
+            // Can use StringBuilder when expecting a lot more concatenation due to the way C# handles string concat
+            string result = "";
+            if (value % 3 == 0)
+            {
+                result += "Fizz";
+            }
+            if (value % 5 == 0)
+            {
+                result += "Buzz";
+            }
+            if (string.IsNullOrWhiteSpace(result))
+            {
+                result += value;
+            }
+            return result;
+        }
     }
 }
