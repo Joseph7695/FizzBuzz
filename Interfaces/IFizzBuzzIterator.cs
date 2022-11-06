@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FizzBuzz.Interfaces
 {
-    interface IFizzBuzzIterator
+    public interface IFizzBuzzIterator
     {
         /// <summary>
         /// Method of iteration for the values

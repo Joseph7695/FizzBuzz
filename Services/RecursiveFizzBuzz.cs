@@ -31,7 +31,6 @@ namespace FizzBuzz.Services
             }
             else
             {
-                result.AppendLine(fizzBuzz.FizzBuzz(i));
                 return result.ToString();
             }
         }

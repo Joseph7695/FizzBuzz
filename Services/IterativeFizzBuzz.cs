@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FizzBuzz.Services
 {
-    internal class IterativeFizzBuzz : IFizzBuzzIterator
+    public class IterativeFizzBuzz : IFizzBuzzIterator
     {
         private readonly IFizzBuzz fizzBuzz;
         private readonly StringBuilder result;
